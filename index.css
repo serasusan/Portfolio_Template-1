@@ -1,0 +1,525 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #131010;
+    left: 0;
+    
+    height: 300vh;
+}
+
+.fade{
+    opacity: 0;
+    animation: fade-in 1.5s ease-in-out forwards;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(0px);
+    }
+ 
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+    /* .page {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .page.show {
+        opacity: 1;
+    }
+    
+    .page.show .animate {
+        animation: slide-up 1s ease-in-out;
+    }
+    
+    @keyframes slide-up {
+        from {
+        transform: translateY(50px);
+        opacity: 0;
+        }
+        to {
+        transform: translateY(0);
+        opacity: 1;
+        }
+    }
+     */
+  
+nav{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /* background-color: teal; */
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* width: 100vw; */
+    color: whitesmoke;
+    z-index: 10;
+}
+
+/* .navlinks{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+} */
+
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links li{
+    list-style: none;
+
+}
+
+.menu{
+    display: flex;
+    gap: 1em;
+    padding-right: 1.5rem;
+}
+
+.menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    /* padding: 0 0.5rem; */
+}
+
+.logo{
+color:#05afca;
+font-size: 2rem;
+font-family: lora;
+width: 1000px;
+}
+
+header{
+    /* background-color: rebeccapurple; */
+    display: flex;
+    flex-direction: row;
+    padding:3rem;
+    position: relative;
+    height: 92vh;
+}
+
+.section1{
+    width: 35%;
+}
+
+.blob{
+    height: 96vh;
+    position: absolute;
+    left: -150px;
+    bottom: 0;  
+}
+
+.img{
+    
+    position: absolute;
+    height: 75vh;
+    bottom: 0px;   
+    left: -10px;
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 28%;
+    
+    /* justify-content: center; */
+    flex-grow: 1;
+    /* font-size: 15rem; */
+    color: white;
+    font-weight: 500;
+}
+
+.text-container{
+    z-index: 1;
+}
+
+.intro{
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Lora', serif;
+    color: whitesmoke;
+}
+
+.title{
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color:#05afca;  
+}
+.subtitle{
+    font-size: 1.5rem;
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+.aboutpage{
+    margin: 20rem 3rem; 
+    /* padding: 0 13rem; */
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+.aboutpage .heading{   
+    font-size: 50px;
+    font-family: poppins;
+    color: offwhite;
+    margin-bottom: 5%;
+    background-image: url(magicpatterns/magicpattern3.png);
+    padding: 3rem;
+}
+
+.aboutpage .content{
+    padding: 40px;
+    font-size: 20px;
+}
+
+.contactpage{
+    margin: 20rem 3rem; 
+    height: 100vh;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    
+}
+
+.contactpage .heading{   
+    font-size: 50px;
+    font-family: poppins;
+    color: offwhite;
+    margin-bottom: 6%;
+    background-image: url(magicpatterns/magicpattern3.png);
+    padding: 3rem;
+}
+
+
+
+.contact-details{
+    
+    width: 90%;
+}
+
+.contact-icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-bottom: %; */
+    width: 30%;
+    /* background-color: #05afca; */
+    height: 100px;
+    
+    
+}
+
+.contact-icons .fa-solid {
+    font-size: 2.5rem;
+    color: rgb(253, 241, 241);
+    /* fill: #fff !important; */
+}
+
+.contact-icons .fa-solid:hover{
+    color: #05afca;
+    transition: 0.3s ease;
+    /* fill: #fff !important; */
+}
+
+.fa-brands{
+    font-size: 2.5rem;
+    color: rgb(253, 241, 241);
+    /* fill: #fff !important; */
+}
+
+.fa-brands:hover{
+    color: #05afca;
+    transition: 0.3s ease;}
+/* .contactpage .heading{
+    left:50vw;
+
+} */
+/* .container {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  } */
+  
+  
+
+  /* 2xl
+  @media (max-width: 1536px) {
+    .container {
+      max-width: 1280px;
+      background-color: green;
+    }
+
+    
+  } */
+  
+  /* xl */
+  /* @media (max-width: 1280px) {
+    .container {
+      max-width: 1024px;
+      background-color: rgb(130, 96, 4);
+      margin-right: 0px;
+    }
+
+    .firstpage-info{
+        margin-left: -29px;
+        background-color: rgb(6, 68, 121);
+    }
+    .firstpage-info .intro{
+        font-size: 30px;
+    }
+    .firstpage-info .title{
+        font-size: 40px;
+    }
+    .firstpage-info .subtitle{
+        font-size: 20px;
+    }
+
+  }
+   */
+  /* lg */
+  @media (max-width: 1024px) {
+    .container {
+      z-index: 1;
+      /* background-color: #0a5317 ; */
+    }
+
+    .section1{
+        width: 50%;    
+    }
+
+    .header{
+        position: relative; 
+    }
+    .img{
+        position: absolute;  
+        height: 75vh;
+        bottom: 0;
+        left: -90px;
+
+    }
+
+    .blob{
+        height: 96vh;
+        position: absolute;
+        left:-300px;
+        bottom: 0px;  
+}
+    .section2{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        top: 40%;
+        flex-grow: 1;
+        color: white;
+        font-weight: 500;
+    }
+
+    .title{
+        font-size: 3rem;
+    }
+    .subtitle{
+        font-size: 1.3rem;
+    }
+  
+
+
+   
+  }
+  
+
+
+  /* md */
+  @media (max-width: 768px) {
+    .container {
+        z-index: 1;
+        /* background-color: rgb(131, 93, 79) ; */
+      }
+
+    .nav-links a{
+        font-size: 1.2rem;
+
+    }
+    
+    .header{
+        height: 100vh;
+    }
+      .section1{
+          width: 50%;    
+      }
+  
+      .header{
+          /* position: relative;  */
+          display: flex;
+          flex-direction: column;
+
+      }
+      .img{
+          position: absolute;  
+          height: 65vh;
+          bottom: 0;
+          left: -90px;
+  
+      }
+  
+      .blob{
+          height: 83vh;
+          position: absolute;
+          left:-390px;
+          bottom: 0px;  
+  }
+      .section2{
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          left: 3%;
+          top: 40%;
+          flex-grow: 1;
+          color: white;
+          font-weight: 500;
+      }
+  
+      .title{
+          font-size: 3rem;
+      }
+      .subtitle{
+          font-size: 1.3rem;
+      }
+
+  }
+  
+  /* sm */
+  /* @media (max-width: 640px) {
+    .container {
+      max-width: 425px;
+      background-color: red;
+    }
+
+    .photo-container{
+        left: -10px;
+        margin-bottom: 700px;
+    }
+
+    .firstpage{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+ 
+    .firstpage-info{
+        z-index: 1; 
+        background-color: blue;
+    }
+    .firstpage-info .intro{
+    }
+    .firstpage-info .title{
+    }
+    .firstpage-info .subtitle{
+    }
+    
+  } */
+
+  
+  /* xs */
+  @media (max-width: 425px) {
+
+    .container {
+        z-index: 1;
+        /* background-color: #0a5317 ; */
+      }
+
+    .navbar{
+        width: 100vw;
+        padding: 5px;
+    }
+
+    .navbar a{
+        font-size: 1rem;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+    }
+
+    .section1{
+        height: 36vh;
+    }
+
+    .img{
+        height: 55vh;
+        top: 7.5%;
+    }
+    
+    .blob{
+        top: 4%;
+        height: 70vh;
+        left: -200px;
+    }
+
+    .section2{
+        left: -13%;
+        /* top: 3%; */
+    }
+    .intro{
+        font-size: 1.2rem;
+    }
+    .title{
+        font-size: 2.3rem;    
+    }
+    .subtitle{
+        font-size: 1rem;
+    }
+
+    .aboutpage .heading{
+        font-size: 30px;
+        padding: 1rem;
+    }
+    .aboutpage .content{
+        font-size: 15px;
+    }
+
+
+    .contactpage .heading{
+        font-size: 30px;
+        padding: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .contact-icons{
+        width: 90vw;
+    }
+
+   
+  }
